@@ -5,8 +5,8 @@ const CloudinaryUpload = ({ setUrl, setSongName }) => {
   const uploadSongWidget = () => {
     let myUploadWidget = openUploadWidget(
       {
-        cloudName: "dtekkvnmz", // Replace with your Cloudinary cloud name
-        uploadPreset: "spotify-clone", // Replace with your Cloudinary upload preset
+        cloudName: process.env.CLOUD_NAME,
+        uploadPreset: process.env.UPLOAD_PRESET,
         sources: ["local"],
       },
       function (error, result) {
