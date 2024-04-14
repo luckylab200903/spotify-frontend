@@ -1,1 +1,1 @@
-export const backendURl="http://52.66.63.49/api"
+export const backendURl="https://52.66.63.49/api"
